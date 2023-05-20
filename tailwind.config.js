@@ -14,7 +14,7 @@ module.exports = {
       //Secondary Colors
         red: 'hsl(0, 87%, 67%)',
       //Neutral Colors
-        gray: 'hsl(0, 0%, 75%)',
+        gray: 'hsl(0,0%,93%)',
         'grayish-violet': 'hsl(257, 7%, 63%)',
         'very-dark-blue': 'hsl(255, 11%, 22%)',
         'very-dark-violet': 'hsl(260, 8%, 14%)'

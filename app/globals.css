@@ -3,22 +3,33 @@
 @tailwind utilities;
 
 @layer base {
+  body {
+    @apply font-poppins;
+  }
   .container {
     @apply max-w-5xl mx-auto px-6;
   }
   h1 {
-    @apply text-xl sm:text-3xl md:text-6xl;
+    @apply text-5xl md:text-7xl;
+    @apply font-bold;
   }
   h2 {
-    @apply text-xl sm:text-2xl md:text-4xl
+    @apply text-3xl md:text-4xl;
+    @apply font-bold;
+  }
+  h3 {
+    @apply text-2xl font-bold;
+  }
+  p {
+    @apply text-xl;
   }
 }
 
 @layer components {
   .mobile-nav {
-    @apply md:hidden w-[90%] py-6 px-6;
-    @apply absolute top-[8vh] left-1/2 -translate-x-1/2;
-    @apply bg-very-dark-blue text-white font-bold rounded-lg;
+    @apply lg:hidden w-[90%] py-6 px-6;
+    @apply absolute top-[8vh] left-1/2 -translate-x-1/2 z-50;
+    @apply bg-dark-violet text-white font-bold rounded-lg;
     @apply text-center;
   }
   .mobile-nav li {
@@ -30,15 +41,15 @@
     @apply pt-6;
 
     /* For Large screens*/
-    @apply md:flex-row items-center md:pt-0;
+    @apply lg:flex-row items-center lg:pt-0;
   }
 
   .nav-CTAs .cyan-button {
-    @apply w-full md:w-fit md:px-6
+    @apply w-full lg:w-fit lg:px-6
   }
 
   .desktop-menu {
-    @apply hidden md:flex justify-between items-center w-full h-fit;
+    @apply hidden lg:flex justify-between items-center w-full h-fit;
     @apply font-bold;
   }
 
