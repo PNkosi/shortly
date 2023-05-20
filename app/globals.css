@@ -56,4 +56,17 @@
   .cyan-button {
     @apply bg-cyan text-white py-2 rounded-full;
   }
+
+  .footer-container {
+    @apply flex flex-col justify-center gap-8 lg:gap-16;
+    @apply lg:flex-row
+  }
+  .footer-section {
+    @apply flex flex-col text-center text-grayish-violet;
+    @apply lg:text-left
+  }
+
+  .footer-section h4 {
+    @apply mb-2
+  }
 }
